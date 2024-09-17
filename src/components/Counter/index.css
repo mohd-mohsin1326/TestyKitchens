@@ -1,0 +1,16 @@
+.add-sub-item-card {
+  width: 74px;
+  height: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #475569;
+}
+@media screen and (max-width: 576px) {
+  .add-sub-item-card {
+    margin-bottom: 8px;
+  }
+  .counter-btn-style {
+    margin-top: -2px;
+  }
+}

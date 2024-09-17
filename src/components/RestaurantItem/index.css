@@ -1,0 +1,118 @@
+.food-list-item {
+  list-style-type: none;
+  height: 150px;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+.restaurant-detail-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.food-img-style {
+  width: 255px;
+  height: 150px;
+  border-radius: 8px;
+  margin-right: 25px;
+}
+.food-restaurant-name {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  color: #334155;
+  margin-bottom: -10px;
+}
+.cost-style {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: #334155;
+  margin-bottom: -15px;
+}
+.yellow-star-style {
+  color: #ffcc00;
+  margin-right: 8px;
+}
+.price-style {
+  color: #0a1f44;
+  font-weight: 700;
+  font-family: DM Sans;
+}
+.add-btn-style {
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  background: transparent;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+  .food-list-item {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .food-img-style {
+    width: 160px;
+    height: 100px;
+    border-radius: 5px;
+  }
+  .restaurant-detail-container {
+    width: 150px;
+    height: 94px;
+    box-sizing: border-box;
+    margin-top: -30px;
+  }
+  .food-restaurant-name {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  .cost-style {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: -1px;
+  }
+  .rating-num-style {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: left;
+    color: #1e293b;
+  }
+  .rating-price-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+  .add-btn-style {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 10px;
+  }
+}

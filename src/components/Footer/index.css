@@ -1,0 +1,61 @@
+.footer-main-bg-container {
+  min-height: 20vh;
+  width: 100%;
+  background: #0f172a;
+  color: #ffffff;
+  font-family: 'DM Sans';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+.footer-logo-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: -15px;
+}
+.footer-logo-style {
+  width: 53px;
+  height: 43px;
+  margin-right: 10px;
+}
+.website-name-footer {
+  font-family: DM Sans;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+}
+.contact-us-style {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.contact-channel-style {
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+}
+@media screen and (max-width: 576px) {
+  .footer-main-bg-container {
+    font-size: 14px;
+    min-height: 30vh;
+    text-align: center;
+    padding: 10px;
+  }
+  .footer-logo-style {
+    width: 40px;
+    height: 32px;
+  }
+  .website-name-footer {
+    font-size: 20px;
+  }
+  .contact-channel-style {
+    height: 24px;
+    width: 24px;
+  }
+}
