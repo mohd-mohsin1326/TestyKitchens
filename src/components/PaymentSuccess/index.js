@@ -12,7 +12,7 @@ const PaymentSuccess = () => (
           alt="success"
           className="success-img-style"
         />
-        <p className="payment-title">Payment Successful</p>
+        <h1 className="payment-title">Payment Successful</h1>
         <p className="payment-description">
           Thank you for ordering <br /> Your payment is successfully completed.
         </p>

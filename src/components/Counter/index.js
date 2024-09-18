@@ -20,18 +20,18 @@ class Counter extends Component {
     return (
       <div className="add-sub-item-card" data-testid="active-count">
         <button
+          data-testid="decrement-count"
           type="button"
           onClick={this.onDecrement}
-          data-testid="decrement-count"
           className="counter-btn-style"
         >
           -
         </button>
-        <div>{quantity}</div>
+        <div data-testid="active-count">{quantity}</div>
         <button
+          data-testid="increment-count"
           type="button"
           onClick={this.onIncrement}
-          data-testid="increment-count"
           className="counter-btn-style"
         >
           +

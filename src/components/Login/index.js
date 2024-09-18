@@ -62,7 +62,7 @@ class Login extends Component {
                 src="https://res.cloudinary.com/dctk5xes4/image/upload/v1726212505/hiddmoudcfwivh9rapjb.png"
                 alt="website logo"
               />
-              <h1 className="website-name-style">Tastey Kitchens</h1>
+              <h1 className="website-name-style">Tasty Kitchens</h1>
               <h1 className="login-title-style">Login</h1>
               <div className="input-card">
                 <label htmlFor="username" className="label-style">

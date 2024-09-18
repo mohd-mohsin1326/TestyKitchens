@@ -6,7 +6,7 @@ const HotelItem = props => {
   const {eachRestaurent} = props
   const {id, imageUrlRest, name, cuisine, rating, totalReviews} = eachRestaurent
   return (
-    <li className="restaurant-list-item" data-testid="restaurant-item">
+    <li data-testid="restaurant-item" className="restaurant-list-item">
       <Link to={`/restaurant/${id}`}>
         <img
           src={imageUrlRest}
@@ -15,12 +15,12 @@ const HotelItem = props => {
         />
       </Link>
       <div>
-        <p className="restaurant-name">{name}</p>
+        <h1 className="restaurant-name">{name}</h1>
         <p className="cuisine-style">{cuisine}</p>
         <div className="rating-card">
           <FaStar className="star-style" />
           <p className="rating-style">{rating}</p>
-          <p className="rating-number-style">({totalReviews} ratings)</p>
+          <h1 className="rating-number-style">({totalReviews} ratings)</h1>
         </div>
       </div>
     </li>

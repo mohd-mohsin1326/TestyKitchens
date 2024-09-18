@@ -2,8 +2,6 @@
   list-style-type: none;
   height: 20vh;
   width: 30%;
-  margin-right: 20px;
-  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,7 +16,6 @@
   font-family: DM Sans;
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
   text-align: left;
   color: #334155;
   margin-bottom: -5px;
@@ -49,10 +46,12 @@
 }
 .rating-number-style {
   color: #64748b;
+  font-size: 14px;
 }
 @media screen and (max-width: 576px) {
   .restaurant-list-item {
     width: 100%;
+    margin-bottom: 15px;
   }
   .restaurant-image-style {
     margin-right: 10px;
@@ -65,6 +64,10 @@
   }
   .rating-card {
     font-size: 12px;
+  }
+  .rating-number-style {
+    font-size: 12px;
+    font-weight: normal;
   }
 }
 

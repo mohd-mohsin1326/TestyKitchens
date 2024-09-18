@@ -72,6 +72,7 @@
   .food-img-style {
     width: 160px;
     height: 100px;
+    object-fit: cover;
     border-radius: 5px;
   }
   .restaurant-detail-container {

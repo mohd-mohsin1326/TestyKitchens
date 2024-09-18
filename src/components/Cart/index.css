@@ -175,12 +175,11 @@ cart-main-container {
     height: 90px;
     border-radius: 8px;
     margin-top: 5px;
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .mobile-order-item-card {
     width: 95px;
     height: 90px;
-    box-sizing: border-box;
   }
   .mobile-view-cart-item-name {
     font-family: DM Sans;

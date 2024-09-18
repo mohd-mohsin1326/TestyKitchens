@@ -2,7 +2,7 @@ import {
   FaPinterestSquare,
   FaInstagram,
   FaTwitter,
-  FaFacebook,
+  FaFacebookSquare,
 } from 'react-icons/fa'
 import './index.css'
 
@@ -17,24 +17,27 @@ export default function Footer() {
         />
         <h1 className="website-name-footer">Tasty Kitchens</h1>
       </div>
-      <p>The only thing we are serious about is food.</p>
-      <p className="contact-us-style">Contact us on</p>
+      <p>
+        The only thing we are serious about is food.
+        <br />
+        <style className="contact-us-style">Contact us on </style>
+      </p>
       <div>
         <FaPinterestSquare
           className="contact-channel-style"
-          data-testid="pintrest-social-icon"
+          testid="pintrest-social-icon"
         />
         <FaInstagram
           className="contact-channel-style"
-          data-testid="instagram-social-icon"
+          testid="instagram-social-icon"
         />
         <FaTwitter
           className="contact-channel-style"
-          data-testid="twitter-social-icon"
+          testid="twitter-social-icon"
         />
-        <FaFacebook
+        <FaFacebookSquare
           className="contact-channel-style"
-          data-testid="facebook-social-icon"
+          testid="facebook-social-icon"
         />
       </div>
     </div>

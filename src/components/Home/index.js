@@ -157,7 +157,6 @@ class Home extends Component {
         {crouselImageList.map(eachOfferImg => (
           <li key={eachOfferImg.id} className="offer-list-style">
             <img
-              key={eachOfferImg.id}
               src={eachOfferImg.imageUrl}
               alt="offer"
               className="offer-image-style"
@@ -182,9 +181,8 @@ class Home extends Component {
           </p>
           <div className="drop-down-filter-card">
             <MdSort className="filter-icon-style" />
-            <label htmlFor="filter">Sort by</label>
+            <p>Sort By</p>
             <select
-              id="filter"
               className="filter-drop-down-style"
               onChange={this.updateFilters}
               value={appliedFilter}
@@ -209,11 +207,11 @@ class Home extends Component {
       <div className="next-previous-main-container">
         <div>
           <button
+            data-testid="pagination-left-button"
             type="button"
             disabled={activePage === 1}
             onClick={() => this.handlePageChange(activePage - 1)}
             className="next-previous-btn-style"
-            data-testid="pagination-left-button"
           >
             <GrFormPrevious />
           </button>
@@ -221,10 +219,10 @@ class Home extends Component {
             {activePage} of {lastPage}
           </span>
           <button
+            data-testid="pagination-right-button"
             type="button"
             onClick={() => this.handlePageChange(activePage + 1)}
             className="next-previous-btn-style"
-            data-testid="pagination-right-button"
           >
             <GrFormNext />
           </button>
@@ -248,8 +246,17 @@ class Home extends Component {
   // loading view container
   renderLoadingView = () => (
     <div
+      data-testid="restaurants-list-loader"
       className="restaurant-loader-container"
+    >
+      <Loader type="Oval" color="#f7931e" height={50} width={50} />
+    </div>
+  )
+
+  renderOffersLoadingView = () => (
+    <div
       data-testid="restaurants-offers-loader"
+      className="offers-loader-container"
     >
       <Loader type="Oval" color="#f7931e" height={50} width={50} />
     </div>
@@ -261,11 +268,13 @@ class Home extends Component {
       <>
         <Header />
         <div className="home-main-bg-container">
+          {isLoading
+            ? this.renderOffersLoadingView()
+            : this.offersListCrousels()}
           {isLoading ? (
             this.renderLoadingView()
           ) : (
             <>
-              {this.offersListCrousels()}
               {this.renderFilterCard()}
               {this.rednerHotelList()}
               {this.nextPreviousCard()}
