@@ -18,6 +18,10 @@
   justify-content: center;
   align-items: center;
 }
+.offers-list {
+  width: 100%;
+  margin-left: -20px;
+}
 .offer-list-style {
   list-style-type: none;
 }
@@ -34,6 +38,9 @@
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 20px;
+  }
+  .offers-list {
+    width: 100%;
   }
 }
 

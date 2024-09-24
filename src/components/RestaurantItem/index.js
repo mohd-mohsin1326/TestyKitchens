@@ -10,7 +10,7 @@ const RestaurantItem = props => {
     selectedItem(eachFood)
   }
   return (
-    <li data-testid="foodItem" className="food-list-item">
+    <li testid="foodItem" className="food-list-item">
       <img src={imageUrl} alt="restaurant" className="food-img-style" />
       <div className="restaurant-detail-container">
         <h1 className="food-restaurant-name">{name}</h1>
@@ -23,7 +23,7 @@ const RestaurantItem = props => {
           <Counter />
         ) : (
           <button
-            data-testid="active-count"
+            testid="active-count"
             type="button"
             className="add-btn-style"
             onClick={addToCart}

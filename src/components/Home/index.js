@@ -153,17 +153,19 @@ class Home extends Component {
       slidesToScroll: 1,
     }
     return (
-      <Slider {...settings}>
-        {crouselImageList.map(eachOfferImg => (
-          <li key={eachOfferImg.id} className="offer-list-style">
-            <img
-              src={eachOfferImg.imageUrl}
-              alt="offer"
-              className="offer-image-style"
-            />
-          </li>
-        ))}
-      </Slider>
+      <ul className="offers-list">
+        <Slider {...settings}>
+          {crouselImageList.map(eachOfferImg => (
+            <li key={eachOfferImg.id} className="offer-list-style">
+              <img
+                src={eachOfferImg.imageUrl}
+                alt="offer"
+                className="offer-image-style"
+              />
+            </li>
+          ))}
+        </Slider>
+      </ul>
     )
   }
 
@@ -207,7 +209,7 @@ class Home extends Component {
       <div className="next-previous-main-container">
         <div>
           <button
-            data-testid="pagination-left-button"
+            testid="pagination-left-button"
             type="button"
             disabled={activePage === 1}
             onClick={() => this.handlePageChange(activePage - 1)}
@@ -215,11 +217,11 @@ class Home extends Component {
           >
             <GrFormPrevious />
           </button>
-          <span className="page-number-style" data-testid="active-page-number">
+          <span testid="active-page-number" className="page-number-style">
             {activePage} of {lastPage}
           </span>
           <button
-            data-testid="pagination-right-button"
+            testid="pagination-right-button"
             type="button"
             onClick={() => this.handlePageChange(activePage + 1)}
             className="next-previous-btn-style"
@@ -246,7 +248,7 @@ class Home extends Component {
   // loading view container
   renderLoadingView = () => (
     <div
-      data-testid="restaurants-list-loader"
+      testid="restaurants-list-loader"
       className="restaurant-loader-container"
     >
       <Loader type="Oval" color="#f7931e" height={50} width={50} />
@@ -254,10 +256,7 @@ class Home extends Component {
   )
 
   renderOffersLoadingView = () => (
-    <div
-      data-testid="restaurants-offers-loader"
-      className="offers-loader-container"
-    >
+    <div testid="restaurants-offers-loader" className="offers-loader-container">
       <Loader type="Oval" color="#f7931e" height={50} width={50} />
     </div>
   )

@@ -18,18 +18,18 @@ class Counter extends Component {
   render() {
     const {quantity} = this.state
     return (
-      <div className="add-sub-item-card" data-testid="active-count">
+      <div className="add-sub-item-card" testid="active-count">
         <button
-          data-testid="decrement-count"
+          testid="decrement-count"
           type="button"
           onClick={this.onDecrement}
           className="counter-btn-style"
         >
           -
         </button>
-        <div data-testid="active-count">{quantity}</div>
+        <div testid="active-count">{quantity}</div>
         <button
-          data-testid="increment-count"
+          testid="increment-count"
           type="button"
           onClick={this.onIncrement}
           className="counter-btn-style"

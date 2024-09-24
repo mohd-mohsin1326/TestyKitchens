@@ -6,7 +6,7 @@ const HotelItem = props => {
   const {eachRestaurent} = props
   const {id, imageUrlRest, name, cuisine, rating, totalReviews} = eachRestaurent
   return (
-    <li data-testid="restaurant-item" className="restaurant-list-item">
+    <li testid="restaurant-item" className="restaurant-list-item">
       <Link to={`/restaurant/${id}`}>
         <img
           src={imageUrlRest}
