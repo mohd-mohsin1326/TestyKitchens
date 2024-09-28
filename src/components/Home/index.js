@@ -256,7 +256,10 @@ class Home extends Component {
   )
 
   renderOffersLoadingView = () => (
-    <div testid="restaurants-offers-loader" className="offers-loader-container">
+    <div
+      testid="restaurants-offers-loader"
+      className="offers-loader-container"
+    >
       <Loader type="Oval" color="#f7931e" height={50} width={50} />
     </div>
   )

@@ -54,98 +54,54 @@ class Login extends Component {
       return <Redirect to="/" />
     }
     return (
-      <>
-        <div className="login-bg-container">
-          <div className="login-left-card">
-            <form className="form-card" onSubmit={this.onSubmitForm}>
-              <img
-                src="https://res.cloudinary.com/dctk5xes4/image/upload/v1726212505/hiddmoudcfwivh9rapjb.png"
-                alt="website logo"
-              />
-              <h1 className="website-name-style">Tasty Kitchens</h1>
-              <h1 className="login-title-style">Login</h1>
-              <div className="input-card">
-                <label htmlFor="username" className="label-style">
-                  USERNAME
-                </label>
-                <input
-                  type="text"
-                  id="username"
-                  className="input-btn-style"
-                  value={userName}
-                  onChange={this.userNameUpdate}
-                />
-              </div>
-              <div className="input-card">
-                <label htmlFor="password" className="label-style">
-                  PASSWORD
-                </label>
-                <input
-                  type="password"
-                  id="password"
-                  className="input-btn-style"
-                  value={userPassword}
-                  onChange={this.userPasswordUpdate}
-                />
-              </div>
-              {isError && <p className="error-msg-style">{errorMsg}</p>}
-              <button type="submit" className="login-btn-style">
-                Login
-              </button>
-            </form>
-          </div>
-          <div className="login-right-card">
+      <div className="login-bg-container">
+        <div className="login-left-card">
+          <form className="form-card" onSubmit={this.onSubmitForm}>
             <img
-              src="https://res.cloudinary.com/dctk5xes4/image/upload/v1726209857/bsvzddwsfqjlks5v07cy.png"
-              alt="website login"
-              className="banner-img-style"
+              src="https://res.cloudinary.com/dctk5xes4/image/upload/v1726212505/hiddmoudcfwivh9rapjb.png"
+              alt="website logo"
+              className="logo-style"
             />
-          </div>
+            <h1 className="website-name-style">Tasty Kitchens</h1>
+            <h1 className="login-title-style">Login</h1>
+            <div className="input-card">
+              <label htmlFor="username" className="label-style">
+                USERNAME
+              </label>
+              <input
+                type="text"
+                id="username"
+                className="input-btn-style"
+                value={userName}
+                onChange={this.userNameUpdate}
+              />
+            </div>
+            <div className="input-card">
+              <label htmlFor="password" className="label-style">
+                PASSWORD
+              </label>
+              <input
+                type="password"
+                id="password"
+                className="input-btn-style"
+                value={userPassword}
+                onChange={this.userPasswordUpdate}
+              />
+            </div>
+            {isError && <p className="error-msg-style">{errorMsg}</p>}
+            <button type="submit" className="login-btn-style">
+              Login
+            </button>
+          </form>
         </div>
-        <div className="mobile-view-main-bg-container">
+        <div className="login-right-card">
           <img
             src="https://res.cloudinary.com/dctk5xes4/image/upload/v1726209857/bsvzddwsfqjlks5v07cy.png"
-            alt="banner"
-            className="mobile-banner-img-style"
+            alt="website login"
+            className="banner-img-style"
           />
-          <div className="mobile-input-main-container">
-            <h1 className="mobile-login-title-style">Login</h1>
-            <form
-              className="mobile-form-container"
-              onSubmit={this.onSubmitForm}
-            >
-              <div className="input-card">
-                <label htmlFor="username" className="label-style">
-                  USERNAME
-                </label>
-                <input
-                  type="text"
-                  id="username"
-                  className="input-btn-style"
-                  value={userName}
-                  onChange={this.userNameUpdate}
-                />
-              </div>
-              <div className="input-card">
-                <label htmlFor="password" className="label-style">
-                  PASSWORD
-                </label>
-                <input
-                  type="password"
-                  id="password"
-                  className="input-btn-style"
-                  value={userPassword}
-                  onChange={this.userPasswordUpdate}
-                />
-              </div>
-              {isError && <p className="error-msg-style">{errorMsg}</p>}
-              <button type="submit" className="login-btn-style">
-                Login
-              </button>
-            </form>
-          </div>
         </div>
-      </>
+      </div>
     )
   }
 }

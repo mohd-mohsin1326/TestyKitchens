@@ -116,7 +116,7 @@ const Cart = () => {
               </div>
             </li>
             {/* mobile view total amount item */}
-            <li testid="total-price" className="mobile-total-amount-list-item">
+            <li className="mobile-total-amount-list-item" testid="total-price">
               <h1 className="mobile-view-total-style">Order Total:</h1>
               <div>
                 <p className="mobile-total-amt-style">₹ {totalAmount}.00</p>
